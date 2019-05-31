@@ -31,7 +31,8 @@
 
 typedef struct ringbuf_t *ringbuf_t;
 
-
+#define rb_malloc  pvPortMalloc
+#define rb_free    vPortFree
 /* 
 * The default rb_malloc, rb_free points to malloc 
 * and free functions, you can redefine these two functions
